@@ -7,6 +7,20 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+.parallax {
+      /* The image used */
+      background-image: url('background.jpg');
+
+      /* Full height */
+      height: 100%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
 .sidenav {
     width: 130px;
     position: fixed;
@@ -36,13 +50,26 @@ body {
     padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-device-width: 1366px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 </style>
 </head>
 <body>
+
+  <div class="parallax"></div>
+
+  <div style="height:1000px;background-color:Black;font-size:36px">
+    <p>Sebaik-baik manusia adalah yang berguna bagi orang lain</p>
+    <p>- Imam Al-Ghazali</p>
+
+  </div>
+
+  <div class="parallax"></div>
 
 <div class="sidenav">
   <a href="#about">About</a>
@@ -55,7 +82,7 @@ body {
   <h2>Auto Sidebar</h2>
   <p>This sidebar is as tall as its content (the links), and is always shown.</p>
   <p>Scroll down the page to see the result.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet</p>
  
  
 </div>    
