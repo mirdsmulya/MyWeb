@@ -52,10 +52,11 @@ body, html {
 .title {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: #000;
+  font: 50px "Lato", sans-serif
 
 }
 
@@ -87,20 +88,95 @@ h1 {
     }
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    width:100%;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Add social media icon link */
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    top: 100%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Github */
+.fa-github {
+    background: white;
+    color: black;
+}
+
+
+
 </style>
 </head>
 <body>
 
+
 <div class="bgimg1">
-  <div class="title">
-    <span class="border" style="background-color:transparent;font-size:45px;font-style:playlist-script;color: #f7f7f7;">Mirdan Syahid</span>
-    
+  <div class="topnav">
+    <a href="#news">Ask me anything!</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About me</a>
+
+      <div class="title">
+        <span class="border" style="background-color:tranparent;font-size:45px;color:White;"> Endless of Possibilities </span>
+      </div>  
   </div>
 </div>
 
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Parallax Demo</h3>
+  <h3 style="text-align:center;">About Me</h3>
   <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
 </div>
 
@@ -112,11 +188,21 @@ h1 {
 </div>
 
 <div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <h1 style="text-align:center">"Sebaik-baik manusia adalah yang banyak berguna bagi orang lain."</h1>
+  <div style="color:#ddd;background-color:#111;text-align:center;padding:50px 80px;text-align: justify;">
+    <h1 style="text-align:center">"Sebaik-baik manusia adalah yang banyak berguna bagi orang lain.."</h1>
     <p style="text-align:center;letter-spacing: 2px">- Imam Al-Ghazali</p>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Add font awesome icons -->
+      <a href="https://www.facebook.com/mirdan.mulyas" class="fa fa-facebook"></a>
+      <a href="httpw://twitter.com/mirdsm" class="fa fa-twitter"></a>
+      <a href="https://github.com/mirdsmulya" class="fa fa-github"></a>
+
+
   </div>
 </div>
+
 
 
 </body>
