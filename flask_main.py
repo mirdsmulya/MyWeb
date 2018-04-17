@@ -24,6 +24,10 @@ def profile():
 	name = 'Mirdan Syahid'
 	return render_template('user.html')
 
+@app.route('/home')
+def home():
+	return render_template('home.html')
+
 @app.route('/demo')
 def demo():
 	return render_template('parallax-demo.html')
